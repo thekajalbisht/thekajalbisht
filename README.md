@@ -8,9 +8,8 @@ This website displays my Projects, Web presence, Story, Work experience, and con
 [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://thekajalbisht.netlify.app/)
 [![Author](https://img.shields.io/badge/Author-Kajal%20Bisht-purple.svg)](https://in.linkedin.com/in/kajal-bisht-266485292)
 [![Latest Release](https://img.shields.io/badge/Latest%20Release-10%20Sept%202025-yellow.svg)](https://github.com/thekajalbisht/thekajalbisht.github.io)
-<a href="https://github.com/thekajalbisht/thekajalbisht.github.io/blob/master/LICENSE"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
 
-<img width="100%" alt="Portfolio Screenshot" src="https://drive.google.com/uc?export=view&id=1UH6thq3i5DFaNAxZyXxYpwUMpLQeNN6Y">
+<img width="100%" alt="Portfolio Screenshot" src="https://thekajalbisht.netlify.app/readme.png">
 
 :star: Star me on GitHub — it helps!
 
@@ -65,11 +64,6 @@ We provide services like:
 - ⚠️ Remove my Bitmoji from the navbar/footer and use yours instead. ⚠️  
 - Add or remove images from `./src/` directory as per your requirement.  
 - ⚠️<b>NOTE:</b> Make sure to remove `analyticsId` & `google search console Id` from `<head>` tag, and set yours, if you want to use your own Google Analytics & search console account. ⚠️  
-
----
-
-## License 📄
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.  
 
 ---
 
