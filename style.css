@@ -1337,16 +1337,64 @@ footer {
     border-top: 1px solid var(--tech-stack-box-border-color)
 }
 
-/* --- Fixed Footer Background --- */
+/* Alignment Fix: Original layout wapas lane ke liye */
 .footer-background {
     width: 100%;
-    height: auto !important; /* height 100vh se badal kar auto kiya */
-    padding-top: 40px;
+    height: 100vh !important; /* Original height */
     background-color: #0b0b0b;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     z-index: 1
+}
+
+.footer-foreground {
+    position: absolute !important; /* absolute wapas kiya taaki content overlap na kare */
+    top: 0;
+    width: 100%;
+    height: 100vh !important; /* Original height */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+}
+
+.footercontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+/* Naya Button Style: Design disturb nahi karega */
+.highlight-cta-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.highlight-link {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff !important;
+    background: linear-gradient(90deg, #8000ff, #cf59e6);
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(128, 0, 255, 0.4);
+    animation: glow-pulse-new 2s infinite;
+}
+
+@keyframes glow-pulse-new {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
 .footer-blob {
@@ -1356,26 +1404,6 @@ footer {
     border-radius: 50%;
     filter: blur(100px);
     opacity: .7
-}
-
-/* --- Fixed Footer Foreground --- */
-.footer-foreground {
-    position: relative !important; /* absolute aur height 100vh hataya */
-    width: 100%;
-    height: auto !important;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    backdrop-filter: blur(10px)
-}
-
-.footercontainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    padding-bottom: 40px; /* space fix karne ke liye padding add ki */
 }
 
 .two-words {
@@ -2018,37 +2046,4 @@ footer {
         height: fit-content;
         margin-top: 100px;  
     }
-}
-
-/* --- Animated Highlight Link Style (Add this at the end) --- */
-.highlight-cta-container {
-    width: 100%;
-    text-align: center;
-    margin: 30px 0;
-    z-index: 10;
-}
-
-.highlight-link {
-    display: inline-block;
-    padding: 14px 32px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #fff !important;
-    background: linear-gradient(90deg, #8000ff, #cf59e6);
-    border-radius: 50px;
-    text-decoration: none;
-    box-shadow: 0 0 15px rgba(128, 0, 255, 0.5);
-    animation: glow-pulse-new 2s infinite;
-    transition: 0.3s ease-in-out;
-}
-
-@keyframes glow-pulse-new {
-    0% { transform: scale(1); box-shadow: 0 0 10px rgba(128, 0, 255, 0.4); }
-    50% { transform: scale(1.08); box-shadow: 0 0 25px rgba(207, 89, 230, 0.7); }
-    100% { transform: scale(1); box-shadow: 0 0 10px rgba(128, 0, 255, 0.4); }
-}
-
-.highlight-link:hover {
-    filter: brightness(1.2);
-    transform: translateY(-3px);
 }
